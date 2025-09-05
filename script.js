@@ -70,15 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     checkoutBtn.addEventListener("click", () => {
+        if (cart.length)
+            alert("Checkout Successfully");
         cart.length = 0;
-
-        alert("Checkout Successfully");
         renderCart(cart);
     })
     cartItems.addEventListener("click", (e) => {
         if (e.target.tagName === "BUTTON") {
             const deleteProductId = parseInt(e.target.getAttribute("data-id"));
-            cart = cart.filter(item => item.id === deleteProductId)
+            cart = cart.filter(item => item.id !== deleteProductId)
             localStorage.setItem("cart-item", JSON.stringify(cart))
             e.target.closest(".single-product").remove()
             priceTotal = 0;
