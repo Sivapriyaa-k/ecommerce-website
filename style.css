@@ -21,7 +21,7 @@ body .container {
 }
 
 button {
-  background-color: blueviolet;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
   padding: 10px;
   border: 0px;
   color: #fff;
@@ -62,10 +62,6 @@ li {
 
 .hidden {
   display: none;
-}
-
-#product-list{
-    width: 100%;
 }
 
 .product {
