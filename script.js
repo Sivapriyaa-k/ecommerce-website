@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 3, name: "Product 3", price: 29.00 }
     ]
     var cart = JSON.parse(localStorage.getItem('cart-item')) || [];
-
-
     var productList = document.getElementById("product-list");
     var cartItems = document.getElementById("cart-items");
     var emptyCart = document.getElementById("empty-cart");
@@ -19,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cart.length) {
         renderCart(cart);
     }
-    
+
     products.forEach(product => {
         var productDiv = document.createElement('div');
         productDiv.classList.add('product');
