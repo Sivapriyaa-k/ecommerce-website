@@ -87,7 +87,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     totalPrice.textContent = `$${priceTotal.toFixed(2)}`;
                 })
             }
-
         }
     })
 })
