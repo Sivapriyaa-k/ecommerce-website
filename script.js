@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         cart.length = 0;
         renderCart(cart);
     })
+
     cartItems.addEventListener("click", (e) => {
         if (e.target.tagName === "BUTTON") {
             const deleteProductId = parseInt(e.target.getAttribute("data-id"));
