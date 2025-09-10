@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cart.length) {
         renderCart(cart);
     }
+    
     products.forEach(product => {
         var productDiv = document.createElement('div');
         productDiv.classList.add('product');
