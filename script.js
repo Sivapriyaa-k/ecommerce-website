@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     var totalPrice = document.getElementById("total-price");
     var checkoutBtn = document.getElementById("checkout-btn");
 
-
     if (cart.length) {
         renderCart(cart);
     }
