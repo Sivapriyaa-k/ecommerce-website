@@ -87,6 +87,7 @@ li {
 #cart-items {
   width: 100%;
 }
+
 .single-product {
   display: flex;
   justify-content: space-between;
